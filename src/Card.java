@@ -6,7 +6,11 @@ public class Card {
     public int value;
 
     //name
-    public String name; 
+    public String name;
 
+
+    public Card() { System.out.println("The King of Hearts is worth 10 points!");
+
+    }
 
 }
