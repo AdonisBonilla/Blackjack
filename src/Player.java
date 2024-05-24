@@ -12,16 +12,25 @@ public class Player {
     public Card[] hand;
 
 
-
-    public Player(){
+    public Player(boolean pIsDealer, int pCardSum, boolean pIsBust) {
+        isDealer = pIsDealer;
+        cardsSum = pCardSum;
+        isBust = pIsBust;
+        hand = new Card[2];
 
 
     }
 
-    public void print(){
+    public void print() {
+        if (isDealer) {
+            System.out.println("The dealer has " + cardsSum + " points.");
 
+        } else {
+            System.out.println("The player has " + cardsSum + "points. ");
+
+
+        }
 
     }
 
 }
-

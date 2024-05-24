@@ -1,6 +1,11 @@
 public class Casino {
 
     public Card aceOfHearts;
+
+    public Player Jai;
+
+    public Player dealer;
+
     public Card[] deck;
 
     public static void main(String[] args) {
@@ -26,6 +31,13 @@ public class Casino {
         }
         shuffle();
         printDeck();
+
+        Jai = new Player(false, 0, false);
+        Jai.print();
+
+        dealer = new Player(true, 0, false);
+        dealer.print();
+
     }
 
     public void printDeck() {
