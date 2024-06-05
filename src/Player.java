@@ -21,7 +21,10 @@ public class Player {
 
     }
 
+
     public void print() {
+
+
         if (isDealer) {
             System.out.println("The dealer has " + cardsSum + " points.");
 
@@ -30,6 +33,25 @@ public class Player {
 
 
         }
+
+        if (cardsSum>21){
+
+            isBust = true;
+            System.out.println("YOU HAVE BUSTEDD! YOU LOSE!");
+        } else {
+
+          isBust = false;
+
+        }
+
+
+
+
+
+        for(int i=0; i<hand.length; i++){
+            hand[i].print();
+        }
+
 
     }
 
